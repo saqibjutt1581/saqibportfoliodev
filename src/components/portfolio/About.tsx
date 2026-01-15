@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, MapPin, Calendar } from 'lucide-react';
+import { GraduationCap, MapPin, Calendar, Briefcase } from 'lucide-react';
 
 const About = () => {
   const fadeIn = {
@@ -26,15 +26,19 @@ const About = () => {
             className="gradient-border p-8 md:p-12"
           >
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-8">
-              I am a dedicated <span className="text-primary font-semibold">Software Engineering graduate</span> with a passion for building intelligent automation systems that transform how businesses operate. With hands-on experience in CMS development, GoHighLevel automation, funnel building, CRM setup, Zapier integrations, and Webflow website development, I bring a comprehensive skill set to every project.
+              I am a dedicated <span className="text-primary font-semibold">Software Engineering graduate</span> with over <span className="text-primary font-semibold">2+ years of hands-on experience</span> working at <span className="text-primary font-semibold">Hatzs Dimension</span>, a professional software house. My expertise spans CMS development, GoHighLevel (GHL) automation, funnel building, CRM setup, Zapier integrations, and Webflow development.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-8">
-              My expertise lies in creating <span className="text-primary font-semibold">scalable automation solutions</span> that help businesses save time, increase conversions, and automate their workflows. Whether it's setting up complex CRM pipelines, designing high-converting sales funnels, or integrating multiple platforms through Zapier, I deliver solutions that drive real results.
+              I specialize in creating <span className="text-primary font-semibold">scalable automation solutions</span> that help businesses automate operations, improve lead management, and increase conversions through smart systems. From designing complex CRM pipelines to building high-converting sales funnels, I deliver solutions that drive measurable results.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg">
+            <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-8">
+              Working in a professional software house environment has honed my ability to deliver <span className="text-primary font-semibold">client-focused solutions</span> with efficiency and precision. I collaborate with diverse teams and clients, ensuring every project meets the highest standards of quality and performance.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors">
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <GraduationCap className="w-6 h-6 text-primary" />
                 </div>
@@ -44,7 +48,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors">
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
@@ -54,13 +58,23 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors">
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Graduated</p>
                   <p className="font-medium">2024</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <Briefcase className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Experience</p>
+                  <p className="font-medium">2+ Years</p>
                 </div>
               </div>
             </div>

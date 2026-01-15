@@ -4,29 +4,37 @@ import automationImage from '@/assets/automation-workflow.jpg';
 
 const automationCapabilities = [
   {
-    title: 'CRM Pipeline Automation',
-    description: 'Design and implement automated lead progression through customized pipeline stages, ensuring no opportunity falls through the cracks.',
+    title: 'End-to-End CRM Automation',
+    description: 'Design complete automation systems in GoHighLevel from lead capture to conversion with smart pipeline progression.',
   },
   {
-    title: 'Email & SMS Automation',
-    description: 'Create sophisticated drip campaigns and instant response sequences that nurture leads 24/7 without manual intervention.',
+    title: 'CRM Pipelines & Smart Workflows',
+    description: 'Build intelligent pipelines with automated stage transitions, task creation, and team notifications.',
   },
   {
-    title: 'WhatsApp Business Integration',
-    description: 'Set up automated WhatsApp messaging flows for instant customer engagement and support ticketing.',
-  },
-  {
-    title: 'Lead Nurturing Sequences',
-    description: 'Build intelligent follow-up sequences that adapt based on lead behavior, scoring, and engagement levels.',
+    title: 'Automated Lead Nurturing',
+    description: 'Create sophisticated nurturing sequences that adapt based on lead behavior, scoring, and engagement levels.',
   },
   {
     title: 'Appointment Booking Automation',
-    description: 'Implement seamless scheduling systems with automated reminders, confirmations, and no-show follow-ups.',
+    description: 'Implement seamless scheduling with automated reminders, confirmations, reschedules, and no-show follow-ups.',
+  },
+  {
+    title: 'Email & SMS Follow-up Sequences',
+    description: 'Build multi-channel drip campaigns with personalized messaging that runs 24/7 without manual intervention.',
   },
   {
     title: 'Zapier Multi-Platform Integration',
-    description: 'Connect GoHighLevel with Google Sheets, Calendly, Stripe, webhooks, and 5,000+ applications for unified workflows.',
+    description: 'Connect GHL with Google Sheets, Calendars, Stripe, webhooks, and 5,000+ apps for unified workflows.',
   },
+];
+
+const realWorldProjects = [
+  'Agency client onboarding automation reducing manual work by 80%',
+  'Lead scoring system processing 1000+ leads monthly',
+  'Multi-location appointment booking with automated routing',
+  'E-commerce integration with automated order notifications',
+  'Review request automation with conditional follow-ups',
 ];
 
 const Automation = () => {
@@ -47,12 +55,12 @@ const Automation = () => {
             Automation <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Advanced automation solutions that streamline operations and drive business growth
+            Advanced automation solutions built at a software house level for real client projects
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-500 mx-auto rounded-full mt-4" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Image Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -69,6 +77,26 @@ const Automation = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
             </div>
+
+            {/* Real World Projects */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="mt-8 gradient-border p-6"
+            >
+              <h4 className="font-display font-semibold text-lg mb-4">Real Client Projects:</h4>
+              <ul className="space-y-3">
+                {realWorldProjects.map((project, index) => (
+                  <li key={index} className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>{project}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-pulse-glow" />
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow animation-delay-400" />
@@ -86,7 +114,7 @@ const Automation = () => {
               Transforming Business Operations Through Intelligent Automation
             </h3>
             <p className="text-muted-foreground mb-8">
-              I specialize in designing and implementing advanced automations in GoHighLevel that help agencies and service-based businesses scale efficiently. From initial lead capture to final conversion, every step is optimized for maximum efficiency.
+              With 2+ years of experience at Hatzs Dimension, I've designed and implemented advanced automations in GoHighLevel for diverse clients. From initial lead capture to final conversion, I optimize every step for maximum efficiency and ROI.
             </p>
 
             <div className="space-y-4">
