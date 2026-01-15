@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { Phone, Linkedin, ArrowRight, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -17,11 +17,21 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="w-20 h-20 mx-auto mb-8 rounded-2xl bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center"
+          >
+            <Rocket className="w-10 h-10 text-primary" />
+          </motion.div>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Let's <span className="gradient-text">Build Smart Systems</span> Together
+            Let's <span className="gradient-text">Automate & Scale</span> Your Business
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Ready to automate your business processes and scale efficiently? Let's discuss how I can help transform your operations.
+            Ready to automate your business processes and scale efficiently? Let's discuss how I can help transform your operations with smart systems.
           </p>
 
           {/* CTA Buttons */}

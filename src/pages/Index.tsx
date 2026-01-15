@@ -1,6 +1,7 @@
 import Header from '@/components/portfolio/Header';
 import Hero from '@/components/portfolio/Hero';
 import About from '@/components/portfolio/About';
+import Experience from '@/components/portfolio/Experience';
 import Skills from '@/components/portfolio/Skills';
 import Automation from '@/components/portfolio/Automation';
 import Funnels from '@/components/portfolio/Funnels';
@@ -15,6 +16,7 @@ const Index = () => {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Automation />
         <Funnels />

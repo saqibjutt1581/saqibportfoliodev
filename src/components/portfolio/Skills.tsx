@@ -7,7 +7,8 @@ import {
   Code, 
   Globe, 
   Cpu, 
-  Users 
+  MessageSquare,
+  Cog
 } from 'lucide-react';
 
 const skills = [
@@ -18,38 +19,43 @@ const skills = [
   },
   {
     icon: Workflow,
-    title: 'GHL Automation',
-    description: 'Advanced workflow automation, triggers, and conditional logic implementation.',
+    title: 'Advanced GHL Automation',
+    description: 'Complex workflow automation, triggers, conditional logic, and smart sequences.',
   },
   {
     icon: Target,
-    title: 'Sales Funnels',
-    description: 'Lead funnels, appointment funnels, email & SMS funnels that convert.',
+    title: 'Funnel Building',
+    description: 'Lead, appointment, and sales funnels designed for maximum conversions.',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Email, SMS & WhatsApp',
+    description: 'Multi-channel automated messaging for engagement and nurturing.',
   },
   {
     icon: Zap,
-    title: 'Zapier Integration',
-    description: 'Connect GHL with third-party tools like Google Sheets, Calendly, and Stripe.',
+    title: 'Zapier Integrations',
+    description: 'Connect GHL with Google Sheets, Calendly, Stripe, and external tools.',
   },
   {
     icon: Code,
     title: 'CMS Development',
-    description: 'Custom content management solutions tailored to business needs.',
+    description: 'Dynamic content management solutions tailored to business needs.',
   },
   {
     icon: Globe,
-    title: 'Webflow Design',
-    description: 'Responsive, pixel-perfect websites with CMS integration and animations.',
+    title: 'Webflow Development',
+    description: 'Responsive, pixel-perfect websites with CMS and animations.',
   },
   {
     icon: Cpu,
-    title: 'API & Automation',
-    description: 'Custom API integrations and automation logic for complex workflows.',
+    title: 'API Integrations',
+    description: 'Custom API connections and webhooks for seamless data flow.',
   },
   {
-    icon: Users,
-    title: 'Lead Management',
-    description: 'CRM optimization for better lead tracking, nurturing, and conversion.',
+    icon: Cog,
+    title: 'Business Automation',
+    description: 'End-to-end process automation for operational efficiency.',
   },
 ];
 
@@ -100,7 +106,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {skills.map((skill) => (
             <motion.div

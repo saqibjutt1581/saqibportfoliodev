@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Linkedin, Phone } from 'lucide-react';
+import { ArrowDown, Linkedin, Phone, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-automation.jpg';
+import profilePhoto from '@/assets/profile-photo.jpeg';
 
 const Hero = () => {
   return (
@@ -11,20 +12,20 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Automation workflow background"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
       </div>
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-30 z-0" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-20 z-0" />
 
       {/* Glow Effect */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-r from-primary/20 to-blue-500/20 blur-3xl rounded-full animate-pulse-glow z-0" />
 
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -32,12 +33,24 @@ const Hero = () => {
             className="mb-8"
           >
             <div className="relative inline-block">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-blue-500 p-1 mx-auto">
-                <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
-                  <span className="text-4xl md:text-5xl font-display font-bold gradient-text">SA</span>
-                </div>
+              <div className="w-36 h-36 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-primary to-blue-500 p-1.5 mx-auto shadow-2xl">
+                <img
+                  src={profilePhoto}
+                  alt="Saqib Ali - Software Engineer"
+                  className="w-full h-full rounded-full object-cover object-top"
+                />
               </div>
               <div className="absolute inset-0 rounded-full animate-pulse-glow bg-primary/20 blur-xl -z-10" />
+              {/* Experience Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="absolute -bottom-2 -right-2 bg-gradient-to-r from-primary to-blue-500 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg"
+              >
+                <Briefcase className="w-3.5 h-3.5 text-white" />
+                <span className="text-xs font-semibold text-white">2+ Years</span>
+              </motion.div>
             </div>
           </motion.div>
 
