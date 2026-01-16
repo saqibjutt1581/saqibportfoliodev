@@ -11,24 +11,28 @@ const projects = [
     description: 'Professional corporate website with clean design, responsive layout, and optimized performance for a consulting firm.',
     image: webflowCorporate,
     features: ['Responsive Design', 'CMS Integration', 'SEO Optimized'],
+    url: 'https://corporate-demo.webflow.io',
   },
   {
     title: 'SaaS Landing Page',
     description: 'Modern SaaS product landing page with pricing tables, feature sections, and seamless Stripe integration.',
     image: webflowSaas,
     features: ['Animations', 'Pricing Tables', 'Lead Capture'],
+    url: 'https://saas-landing-demo.webflow.io',
   },
   {
     title: 'Creative Agency Portfolio',
     description: 'Bold and creative portfolio website showcasing agency work with stunning visuals and smooth interactions.',
     image: webflowAgency,
     features: ['Image Gallery', 'Case Studies', 'Contact Forms'],
+    url: 'https://agency-portfolio-demo.webflow.io',
   },
   {
     title: 'Personal Brand Website',
     description: 'Elegant personal brand website featuring testimonials, blog integration, and social proof elements.',
     image: webflowPersonal,
     features: ['Blog CMS', 'Testimonials', 'Social Integration'],
+    url: 'https://personal-brand-demo.webflow.io',
   },
 ];
 
@@ -56,13 +60,16 @@ const WebflowProjects = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={project.title}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group gradient-border overflow-hidden card-hover"
+              className="group gradient-border overflow-hidden card-hover block cursor-pointer"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
@@ -91,10 +98,10 @@ const WebflowProjects = () => {
               <div className="p-6">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-xl font-display font-bold">{project.title}</h3>
-                  <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.features.map((feature) => (
                     <span
                       key={feature}
@@ -104,8 +111,11 @@ const WebflowProjects = () => {
                     </span>
                   ))}
                 </div>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary group-hover:underline">
+                  View Website <ExternalLink className="w-4 h-4" />
+                </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
