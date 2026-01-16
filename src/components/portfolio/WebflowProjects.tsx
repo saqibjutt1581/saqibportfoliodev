@@ -7,32 +7,46 @@ import webflowPersonal from '@/assets/webflow-personal.jpg';
 
 const projects = [
   {
-    title: 'Corporate Business Website',
-    description: 'Professional corporate website with clean design, responsive layout, and optimized performance for a consulting firm.',
-    image: webflowCorporate,
-    features: ['Responsive Design', 'CMS Integration', 'SEO Optimized'],
-    url: 'https://corporate-demo.webflow.io',
-  },
-  {
-    title: 'SaaS Landing Page',
-    description: 'Modern SaaS product landing page with pricing tables, feature sections, and seamless Stripe integration.',
+    title: 'SaaS Demo Website',
+    description: 'Modern SaaS product landing page with pricing tables, feature sections, and seamless integrations.',
     image: webflowSaas,
     features: ['Animations', 'Pricing Tables', 'Lead Capture'],
-    url: 'https://saas-landing-demo.webflow.io',
+    url: 'https://webflow.com/made-in-webflow/website/saas-webflow-template',
   },
   {
-    title: 'Creative Agency Portfolio',
+    title: 'Corporate Business Demo Website',
+    description: 'Professional corporate website with clean design, responsive layout, and optimized performance.',
+    image: webflowCorporate,
+    features: ['Responsive Design', 'CMS Integration', 'SEO Optimized'],
+    url: 'https://webflow.com/made-in-webflow/website/developer-portfolio-webflow-template',
+  },
+  {
+    title: 'Creative Agency Demo Website',
     description: 'Bold and creative portfolio website showcasing agency work with stunning visuals and smooth interactions.',
     image: webflowAgency,
     features: ['Image Gallery', 'Case Studies', 'Contact Forms'],
-    url: 'https://agency-portfolio-demo.webflow.io',
+    url: 'https://webflow.com/made-in-webflow/website/developer-portfolio-template',
   },
   {
-    title: 'Personal Brand Website',
+    title: 'Personal Brand Demo Website',
     description: 'Elegant personal brand website featuring testimonials, blog integration, and social proof elements.',
     image: webflowPersonal,
     features: ['Blog CMS', 'Testimonials', 'Social Integration'],
-    url: 'https://personal-brand-demo.webflow.io',
+    url: 'https://webflow.com/made-in-webflow/website/developer-personal-portfolio',
+  },
+  {
+    title: 'Landing Page Demo Website',
+    description: 'High-converting landing page with compelling CTAs, social proof, and mobile-first responsive design.',
+    image: webflowSaas,
+    features: ['Mobile First', 'Fast Loading', 'Conversion Focused'],
+    url: 'https://webflow.com/made-in-webflow/website/developer-portfolio-cv',
+  },
+  {
+    title: 'Portfolio Demo Website',
+    description: 'Clean portfolio website showcasing projects with filterable galleries and smooth page transitions.',
+    image: webflowPersonal,
+    features: ['Portfolio Grid', 'Smooth Animations', 'Contact Form'],
+    url: 'https://webflow.com/made-in-webflow/website/developer-portfolio-free',
   },
 ];
 
