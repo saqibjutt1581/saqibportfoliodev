@@ -7,32 +7,46 @@ import funnelEmailSms from '@/assets/funnel-email-sms.jpg';
 
 const funnels = [
   {
-    title: 'Lead Generation Funnel',
+    title: 'Lead Generation Demo Funnel',
     description: 'High-converting opt-in pages designed to capture leads with compelling offers and seamless form integration.',
     image: funnelLead,
     tags: ['Opt-in Forms', 'Lead Magnets', 'A/B Testing'],
-    url: 'https://demo-leadgen-funnel.gohighlevel.com',
+    url: 'https://preview.gohighlevel.com/template-library',
   },
   {
-    title: 'Appointment Booking Funnel',
+    title: 'Appointment Booking Demo Funnel',
     description: 'Streamlined scheduling funnels that integrate with calendars and automate confirmation sequences.',
     image: funnelAppointment,
     tags: ['Calendar Integration', 'Reminders', 'No-show Recovery'],
-    url: 'https://demo-booking-funnel.gohighlevel.com',
+    url: 'https://www.gohighlevel.com/funnel-builder',
   },
   {
-    title: 'Sales Conversion Funnel',
+    title: 'Sales Conversion Demo Funnel',
     description: 'Multi-step funnels optimized for conversions with upsells, downsells, and order bump functionality.',
     image: funnelSales,
     tags: ['Checkout Pages', 'Upsells', 'Payment Integration'],
-    url: 'https://demo-sales-funnel.gohighlevel.com',
+    url: 'https://www.gohighlevel.com/sales-funnels',
   },
   {
-    title: 'Email & SMS Follow-up Funnel',
+    title: 'Email & SMS Follow-up Demo Funnel',
     description: 'Automated nurture sequences that engage leads across multiple channels for maximum conversion.',
     image: funnelEmailSms,
     tags: ['Drip Campaigns', 'Segmentation', 'Behavioral Triggers'],
-    url: 'https://demo-followup-funnel.gohighlevel.com',
+    url: 'https://www.gohighlevel.com/email-marketing',
+  },
+  {
+    title: 'Webinar Registration Demo Funnel',
+    description: 'Complete webinar registration system with countdown timers, reminder sequences, and replay access.',
+    image: funnelLead,
+    tags: ['Webinar Pages', 'Countdown Timer', 'Email Reminders'],
+    url: 'https://www.gohighlevel.com/landing-page-builder',
+  },
+  {
+    title: 'CRM Onboarding Demo Funnel',
+    description: 'Automated client onboarding workflow with intake forms, welcome sequences, and task assignments.',
+    image: funnelAppointment,
+    tags: ['Intake Forms', 'Automation', 'Client Portal'],
+    url: 'https://www.gohighlevel.com/crm',
   },
 ];
 
