@@ -11,24 +11,28 @@ const funnels = [
     description: 'High-converting opt-in pages designed to capture leads with compelling offers and seamless form integration.',
     image: funnelLead,
     tags: ['Opt-in Forms', 'Lead Magnets', 'A/B Testing'],
+    url: 'https://demo-leadgen-funnel.gohighlevel.com',
   },
   {
     title: 'Appointment Booking Funnel',
     description: 'Streamlined scheduling funnels that integrate with calendars and automate confirmation sequences.',
     image: funnelAppointment,
     tags: ['Calendar Integration', 'Reminders', 'No-show Recovery'],
+    url: 'https://demo-booking-funnel.gohighlevel.com',
   },
   {
     title: 'Sales Conversion Funnel',
     description: 'Multi-step funnels optimized for conversions with upsells, downsells, and order bump functionality.',
     image: funnelSales,
     tags: ['Checkout Pages', 'Upsells', 'Payment Integration'],
+    url: 'https://demo-sales-funnel.gohighlevel.com',
   },
   {
     title: 'Email & SMS Follow-up Funnel',
     description: 'Automated nurture sequences that engage leads across multiple channels for maximum conversion.',
     image: funnelEmailSms,
     tags: ['Drip Campaigns', 'Segmentation', 'Behavioral Triggers'],
+    url: 'https://demo-followup-funnel.gohighlevel.com',
   },
 ];
 
@@ -56,13 +60,16 @@ const Funnels = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {funnels.map((funnel, index) => (
-            <motion.div
+            <motion.a
               key={funnel.title}
+              href={funnel.url}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group gradient-border overflow-hidden card-hover"
+              className="group gradient-border overflow-hidden card-hover block cursor-pointer"
             >
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -76,9 +83,12 @@ const Funnels = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-display font-bold mb-2">{funnel.title}</h3>
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-xl font-display font-bold">{funnel.title}</h3>
+                  <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+                </div>
                 <p className="text-muted-foreground text-sm mb-4">{funnel.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {funnel.tags.map((tag) => (
                     <span
                       key={tag}
@@ -88,8 +98,11 @@ const Funnels = () => {
                     </span>
                   ))}
                 </div>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary group-hover:underline">
+                  View Funnel <ExternalLink className="w-4 h-4" />
+                </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
