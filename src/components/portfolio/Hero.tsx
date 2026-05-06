@@ -45,7 +45,7 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-2 rounded-full mb-6"
               >
                 <Briefcase className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">2+ Years Professional Experience</span>
+                <span className="text-sm font-medium text-primary">3 Years Professional Experience</span>
               </motion.div>
 
               {/* Name */}

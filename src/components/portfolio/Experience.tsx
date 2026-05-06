@@ -66,7 +66,7 @@ const Experience = () => {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg">
                     <Calendar className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium">2+ Years Experience</span>
+                    <span className="text-sm font-medium">3 Years Experience</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-lg">
                     <Briefcase className="w-4 h-4 text-primary" />
@@ -77,7 +77,7 @@ const Experience = () => {
 
               {/* Description */}
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Working as a dedicated Software Engineer at Hatzs Dimension, specializing in building robust automation systems, CRM solutions, and conversion-focused funnels for diverse clients ranging from startups to established agencies.
+                With 3 years of professional experience, working as a dedicated Software Engineer at Hatzs Dimension, specializing in building robust automation systems, CRM solutions, and conversion-focused funnels for diverse clients ranging from startups to established agencies.
               </p>
 
               {/* Responsibilities */}
