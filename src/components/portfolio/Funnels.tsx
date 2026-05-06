@@ -7,46 +7,46 @@ import funnelEmailSms from '@/assets/funnel-email-sms.jpg';
 
 const funnels = [
   {
-    title: 'Lead Generation Demo Funnel',
+    title: 'Lead Generation Funnel',
     description: 'High-converting opt-in pages designed to capture leads with compelling offers and seamless form integration.',
     image: funnelLead,
     tags: ['Opt-in Forms', 'Lead Magnets', 'A/B Testing'],
-    url: 'https://www.clickfunnels.com/blog/lead-generation-funnel-examples/',
+    url: 'https://www.dotcomsecrets.com/',
   },
   {
-    title: 'Appointment Booking Demo Funnel',
+    title: 'Appointment Booking Funnel',
     description: 'Streamlined scheduling funnels that integrate with calendars and automate confirmation sequences.',
     image: funnelAppointment,
     tags: ['Calendar Integration', 'Reminders', 'No-show Recovery'],
-    url: 'https://calendly.com/d/inviter-demo',
+    url: 'https://calendly.com/',
   },
   {
-    title: 'Sales Conversion Demo Funnel',
+    title: 'Sales Conversion Funnel',
     description: 'Multi-step funnels optimized for conversions with upsells, downsells, and order bump functionality.',
     image: funnelSales,
     tags: ['Checkout Pages', 'Upsells', 'Payment Integration'],
-    url: 'https://www.clickfunnels.com/blog/sales-funnel-examples/',
+    url: 'https://www.clickfunnels.com/',
   },
   {
-    title: 'Email & SMS Follow-up Demo Funnel',
+    title: 'Email & SMS Follow-up Funnel',
     description: 'Automated nurture sequences that engage leads across multiple channels for maximum conversion.',
     image: funnelEmailSms,
     tags: ['Drip Campaigns', 'Segmentation', 'Behavioral Triggers'],
-    url: 'https://www.gohighlevel.com/email-marketing',
+    url: 'https://mailchimp.com/',
   },
   {
-    title: 'Webinar Registration Demo Funnel',
+    title: 'Webinar Registration Funnel',
     description: 'Complete webinar registration system with countdown timers, reminder sequences, and replay access.',
     image: funnelLead,
     tags: ['Webinar Pages', 'Countdown Timer', 'Email Reminders'],
-    url: 'https://www.clickfunnels.com/blog/webinar-funnel/',
+    url: 'https://www.webinarjam.com/',
   },
   {
-    title: 'CRM Onboarding Demo Funnel',
+    title: 'CRM Onboarding Funnel',
     description: 'Automated client onboarding workflow with intake forms, welcome sequences, and task assignments.',
     image: funnelAppointment,
     tags: ['Intake Forms', 'Automation', 'Client Portal'],
-    url: 'https://www.gohighlevel.com/crm',
+    url: 'https://www.hubspot.com/products/crm',
   },
 ];
 
