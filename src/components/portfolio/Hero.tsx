@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowDown, Linkedin, Briefcase, X, ChevronDown } from 'lucide-react';
+import { ArrowDown, Linkedin, Briefcase, X, ChevronDown, Facebook, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-automation.jpg';
 import profilePhoto from '@/assets/profile-photo.jpeg';
@@ -104,16 +104,34 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
-                className="mt-8 flex items-center gap-4 justify-center lg:justify-start"
+                className="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start"
               >
                 <a
                   href="https://www.linkedin.com/in/saqib-ali-88965031a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                  className="w-10 h-10 rounded-full bg-secondary/60 hover:bg-primary/20 border border-border hover:border-primary/40 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 >
                   <Linkedin className="w-5 h-5" />
-                  <span className="text-sm">Connect on LinkedIn</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/share/18jiQLn3SR/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="w-10 h-10 rounded-full bg-secondary/60 hover:bg-primary/20 border border-border hover:border-primary/40 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/sandho_saqib_jutt?igsh=ZHB2NGNpZHpobGZ2&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="w-10 h-10 rounded-full bg-secondary/60 hover:bg-primary/20 border border-border hover:border-primary/40 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
+                >
+                  <Instagram className="w-5 h-5" />
                 </a>
                 <span className="text-muted-foreground/50">|</span>
                 <a
@@ -167,14 +185,22 @@ const Hero = () => {
                   <span className="text-sm font-semibold text-white whitespace-nowrap">Hatzs Dimension</span>
                 </motion.div>
 
-                {/* Skills Badge */}
+                {/* Skills Badges */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 bg-background border border-primary/30 px-4 py-2 rounded-xl shadow-lg"
+                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 flex flex-col gap-2 items-end"
                 >
-                  <span className="text-sm font-semibold gradient-text">GHL Expert</span>
+                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
+                    GHL Expert
+                  </span>
+                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
+                    Webflow Expert
+                  </span>
+                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
+                    UI/UX Designer
+                  </span>
                 </motion.div>
               </div>
             </motion.div>
