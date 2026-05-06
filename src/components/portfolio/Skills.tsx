@@ -8,7 +8,9 @@ import {
   Globe, 
   Cpu, 
   MessageSquare,
-  Cog
+  Cog,
+  Figma,
+  Palette
 } from 'lucide-react';
 
 const skills = [
@@ -51,6 +53,16 @@ const skills = [
     icon: Cpu,
     title: 'API Integrations',
     description: 'Custom API connections and webhooks for seamless data flow.',
+  },
+  {
+    icon: Figma,
+    title: 'Figma UI/UX Design',
+    description: 'Modern UI/UX layouts, landing pages, and design systems crafted in Figma using creative prompts and contemporary design principles.',
+  },
+  {
+    icon: Palette,
+    title: 'Design Systems',
+    description: 'Building scalable design tokens, components, and brand-consistent visual systems for premium digital products.',
   },
   {
     icon: Cog,
@@ -99,6 +111,18 @@ const Skills = () => {
             A comprehensive skill set focused on automation, CRM, and web development
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-500 mx-auto rounded-full mt-4" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="max-w-3xl mx-auto mb-12 gradient-border p-6 md:p-8 text-center"
+        >
+          <p className="text-base md:text-lg text-foreground/90 leading-relaxed">
+            Beyond automation and development, I craft <span className="gradient-text font-semibold">modern UI/UX layouts and landing pages in Figma</span> — leveraging creative prompts, design systems, and contemporary visual principles to deliver pixel-perfect, conversion-driven interfaces.
+          </p>
         </motion.div>
 
         <motion.div

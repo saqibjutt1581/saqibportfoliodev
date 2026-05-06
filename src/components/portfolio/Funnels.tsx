@@ -11,21 +11,21 @@ const funnels = [
     description: 'High-converting opt-in pages designed to capture leads with compelling offers and seamless form integration.',
     image: funnelLead,
     tags: ['Opt-in Forms', 'Lead Magnets', 'A/B Testing'],
-    url: 'https://preview.gohighlevel.com/template-library',
+    url: 'https://www.clickfunnels.com/blog/lead-generation-funnel-examples/',
   },
   {
     title: 'Appointment Booking Demo Funnel',
     description: 'Streamlined scheduling funnels that integrate with calendars and automate confirmation sequences.',
     image: funnelAppointment,
     tags: ['Calendar Integration', 'Reminders', 'No-show Recovery'],
-    url: 'https://www.gohighlevel.com/funnel-builder',
+    url: 'https://calendly.com/d/inviter-demo',
   },
   {
     title: 'Sales Conversion Demo Funnel',
     description: 'Multi-step funnels optimized for conversions with upsells, downsells, and order bump functionality.',
     image: funnelSales,
     tags: ['Checkout Pages', 'Upsells', 'Payment Integration'],
-    url: 'https://www.gohighlevel.com/sales-funnels',
+    url: 'https://www.clickfunnels.com/blog/sales-funnel-examples/',
   },
   {
     title: 'Email & SMS Follow-up Demo Funnel',
@@ -39,7 +39,7 @@ const funnels = [
     description: 'Complete webinar registration system with countdown timers, reminder sequences, and replay access.',
     image: funnelLead,
     tags: ['Webinar Pages', 'Countdown Timer', 'Email Reminders'],
-    url: 'https://www.gohighlevel.com/landing-page-builder',
+    url: 'https://www.clickfunnels.com/blog/webinar-funnel/',
   },
   {
     title: 'CRM Onboarding Demo Funnel',

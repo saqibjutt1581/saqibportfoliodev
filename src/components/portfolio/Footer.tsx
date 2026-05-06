@@ -1,4 +1,4 @@
-import { Linkedin, Phone, ArrowUp } from 'lucide-react';
+import { Linkedin, Phone, ArrowUp, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -30,10 +30,28 @@ const Footer = () => {
               href="https://www.linkedin.com/in/saqib-ali-88965031a"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+              className="w-9 h-9 rounded-full bg-secondary hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Linkedin className="w-4 h-4" />
-              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/18jiQLn3SR/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-9 h-9 rounded-full bg-secondary hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/sandho_saqib_jutt?igsh=ZHB2NGNpZHpobGZ2&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-9 h-9 rounded-full bg-secondary hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
+            >
+              <Instagram className="w-4 h-4" />
             </a>
           </div>
 
