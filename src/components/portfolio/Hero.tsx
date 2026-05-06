@@ -190,17 +190,16 @@ const Hero = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 flex flex-col gap-2 items-end"
+                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 flex flex-col gap-2 items-end z-10"
                 >
-                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
-                    GHL Expert
-                  </span>
-                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
-                    Webflow Expert
-                  </span>
-                  <span className="bg-background border border-primary/30 px-3 py-1.5 rounded-xl shadow-lg text-xs sm:text-sm font-semibold gradient-text whitespace-nowrap">
-                    UI/UX Designer
-                  </span>
+                  {['GHL Expert', 'Webflow Expert', 'UI/UX Designer'].map((label) => (
+                    <span
+                      key={label}
+                      className="bg-background/80 backdrop-blur-md border border-primary/40 px-3 py-1.5 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] text-xs sm:text-sm font-bold text-primary whitespace-nowrap ring-1 ring-primary/20"
+                    >
+                      {label}
+                    </span>
+                  ))}
                 </motion.div>
               </div>
             </motion.div>
