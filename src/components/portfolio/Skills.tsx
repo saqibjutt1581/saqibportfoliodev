@@ -114,6 +114,18 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="max-w-3xl mx-auto mb-12 gradient-border p-6 md:p-8 text-center"
+        >
+          <p className="text-base md:text-lg text-foreground/90 leading-relaxed">
+            Beyond automation and development, I craft <span className="gradient-text font-semibold">modern UI/UX layouts and landing pages in Figma</span> — leveraging creative prompts, design systems, and contemporary visual principles to deliver pixel-perfect, conversion-driven interfaces.
+          </p>
+        </motion.div>
+
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
