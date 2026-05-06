@@ -8,7 +8,9 @@ import {
   Globe, 
   Cpu, 
   MessageSquare,
-  Cog
+  Cog,
+  Figma,
+  Palette
 } from 'lucide-react';
 
 const skills = [
@@ -51,6 +53,16 @@ const skills = [
     icon: Cpu,
     title: 'API Integrations',
     description: 'Custom API connections and webhooks for seamless data flow.',
+  },
+  {
+    icon: Figma,
+    title: 'Figma UI/UX Design',
+    description: 'Modern UI/UX layouts, landing pages, and design systems crafted in Figma using creative prompts and contemporary design principles.',
+  },
+  {
+    icon: Palette,
+    title: 'Design Systems',
+    description: 'Building scalable design tokens, components, and brand-consistent visual systems for premium digital products.',
   },
   {
     icon: Cog,
