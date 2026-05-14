@@ -11,14 +11,14 @@ const projects = [
     description: 'Modern SaaS product landing page with pricing tables, feature sections, and seamless integrations.',
     image: webflowSaas,
     features: ['Animations', 'Pricing Tables', 'Lead Capture'],
-    url: 'https://linear.app/',
+    url: 'https://lattice.com/',
   },
   {
     title: 'Corporate Business Website',
     description: 'Professional corporate website with clean design, responsive layout, and optimized performance.',
     image: webflowCorporate,
     features: ['Responsive Design', 'CMS Integration', 'SEO Optimized'],
-    url: 'https://www.webflow.com/',
+    url: 'https://www.notion.com/product',
   },
   {
     title: 'Creative Agency Website',
