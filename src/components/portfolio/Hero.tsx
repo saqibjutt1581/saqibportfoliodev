@@ -190,13 +190,14 @@ const Hero = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 flex flex-col gap-2 items-end z-10"
+                  className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 flex flex-col gap-2 items-end z-20"
                 >
                   {['GHL Expert', 'Webflow Expert', 'UI/UX Designer'].map((label) => (
                     <span
                       key={label}
-                      className="bg-background/80 backdrop-blur-md border border-primary/40 px-3 py-1.5 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] text-xs sm:text-sm font-bold text-primary whitespace-nowrap ring-1 ring-primary/20"
+                      className="inline-flex items-center gap-2 bg-background/95 backdrop-blur-xl border border-primary/60 px-3.5 py-1.5 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.6)] text-xs sm:text-sm font-semibold text-foreground whitespace-nowrap ring-2 ring-primary/30"
                     >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_hsl(var(--primary))]" />
                       {label}
                     </span>
                   ))}
